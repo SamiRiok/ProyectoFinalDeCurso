@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.InfoActivity">
+
+    <ScrollView
+        android:id="@+id/scrollViewInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".views.InfoActivity">
+
+            <ImageView
+                android:id="@+id/ImagenCentro"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="72dp"
+                app:layout_constraintEnd_toStartOf="@+id/ImagenSiguiente"
+                app:layout_constraintStart_toEndOf="@+id/imagenAnterior"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/Nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="34dp"
+                android:fontFamily="@font/bebas"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ImagenCentro" />
+
+            <TextView
+                android:id="@+id/TipoInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/bebas"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/Nombre"
+                app:layout_constraintStart_toStartOf="@+id/Nombre"
+                app:layout_constraintTop_toBottomOf="@+id/Nombre" />
+
+            <TextView
+                android:id="@+id/Alto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/bebas"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/Descripcion"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="@+id/Descripcion"
+                app:layout_constraintTop_toBottomOf="@+id/Descripcion" />
+
+            <TextView
+                android:id="@+id/Ancho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/bebas"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/Alto"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/Alto"
+                app:layout_constraintTop_toBottomOf="@+id/Alto" />
+
+            <TextView
+                android:id="@+id/Descripcion"
+                android:layout_width="301dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/bebas"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/TipoInfo"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="@+id/TipoInfo"
+                app:layout_constraintTop_toBottomOf="@+id/TipoInfo" />
+
+            <TextView
+                android:id="@+id/tallaInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/bebas"
+                android:text="TextView"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Ancho" />
+
+            <Button
+                android:id="@+id/AñadirAlCarritoInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#00BCD4"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="Añadir Al Carrito"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CorazonInfo" />
+
+            <ImageButton
+                android:id="@+id/imagenAnterior"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="120dp"
+                android:backgroundTint="#00FFFFFF"
+                app:layout_constraintEnd_toStartOf="@+id/ImagenCentro"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/ImagenCentro"
+                app:srcCompat="@android:drawable/ic_media_previous" />
+
+            <ImageButton
+                android:id="@+id/ImagenSiguiente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:backgroundTint="#00FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ImagenCentro"
+                app:layout_constraintTop_toTopOf="@+id/ImagenCentro"
+                app:srcCompat="@android:drawable/ic_media_next" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="235dp"
+                android:background="@android:drawable/divider_horizontal_bright"
+                app:layout_constraintBottom_toBottomOf="@+id/tallaInfo"
+                app:layout_constraintTop_toTopOf="@+id/Nombre"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sugerenciasRecyler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textoSugerencias"
+                tools:listitem="@layout/sugrenciascard" />
+
+            <TextView
+                android:id="@+id/textoSugerencias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/bebas"
+                android:text="Tenemos Algunas Sugerencias para ti:"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/AñadirAlCarritoInfo" />
+
+            <TextView
+                android:id="@+id/añadidoInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bebas"
+                android:text="Añadido Correctamente"
+                android:textColor="#00BCD4"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/AñadirAlCarritoInfo"
+                app:layout_constraintEnd_toEndOf="@+id/AñadirAlCarritoInfo"
+                app:layout_constraintStart_toStartOf="@+id/AñadirAlCarritoInfo"
+                app:layout_constraintTop_toTopOf="@+id/AñadirAlCarritoInfo" />
+
+            <TextView
+                android:id="@+id/textCorazon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="40dp"
+                android:fontFamily="@font/bebas"
+                android:text="Me gusta:"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tallaInfo" />
+
+            <ImageView
+                android:id="@+id/CorazonInfo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="40dp"
+                android:background="#0000BCD4"
+                android:padding="7dp"
+                android:tint="#00BCD4"
+                app:layout_constraintStart_toEndOf="@+id/textCorazon"
+                app:layout_constraintTop_toBottomOf="@+id/tallaInfo"
+                app:srcCompat="@drawable/corazonvacio" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/Atras"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:drawable/ic_menu_revert"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

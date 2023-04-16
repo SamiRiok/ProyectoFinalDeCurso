@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">appPruebaFinal</string>
+    <string-array name="tipos">
+        <item>Mostrar Todo</item>
+        <item>camiseta</item>
+        <item>pantalon</item>
+        <item>chaqueta</item>
+        <item>sudadera</item>
+        <item>zapatos</item>
+        <item>jerseis</item>
+        <item>chalecos</item>
+        <item>trajes</item>
+        <item>accesorios</item>
+    </string-array>
+    <string-array name="Colores">
+        <item>Mostrar Todo</item>
+        <item>🔴Rojo</item>
+        <item>🔵Azul</item>
+        <item>🟤Marron</item>
+        <item>🔘Gris</item>
+        <item>🟢Verde</item>
+        <item>🟠Naranja</item>
+        <item>🌸Rosa</item>
+        <item>🟣Morado</item>
+        <item>⚫Negro</item>
+        <item>⚪️Blanco</item>
+        <item>🟡Amarillo</item>
+    </string-array>
+
+    <string-array name="TallaAdulto">
+
+        <item>Mostrar Todo</item>
+        <item>XS</item>
+        <item>S</item>
+        <item>M</item>
+        <item>L</item>
+        <item>XL</item>
+        <item>+XL</item>
+
+    </string-array>
+
+    <string-array name="TallaNiño">
+
+        <item>Mostrar Todo</item>
+        <item>93-98cm</item>
+        <item>99-104cm</item>
+        <item>105-110cm</item>
+        <item>111-116cm</item>
+        <item>117-122cm</item>
+        <item>123-128cm</item>
+        <item>129-134cm</item>
+        <item>135-140cm</item>
+
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

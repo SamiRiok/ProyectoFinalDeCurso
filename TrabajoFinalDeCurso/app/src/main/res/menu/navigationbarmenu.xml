@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/RegaloNav"
+        android:icon="@drawable/regalo"
+        android:title="Regalos"
+        app:actionLayout="@layout/custom_menu_item"/>
+    <item
+        android:id="@+id/MegustaNav"
+        android:icon="@drawable/corazonrelleno"
+        android:title="Favoritos"
+        app:actionLayout="@layout/custom_menu_item"/>
+
+    <item
+        android:id="@+id/inicioNav"
+        android:checked="true"
+        android:title="inicio"
+        app:actionLayout="@layout/custom_menu_item" />
+
+    <item
+        android:id="@+id/CarritoNav"
+        android:icon="@drawable/carrito"
+        app:actionLayout="@layout/custom_menu_item"
+        android:title="Carrito" />
+    <item
+        android:id="@+id/perfilNav"
+        android:icon="@drawable/persona"
+        app:actionLayout="@layout/custom_menu_item"
+        android:title="perfil" />
+
+</menu>
